@@ -11,6 +11,7 @@ function getRandomHexColor() {
 }
 
 function onChangeSize() {
-  body.style.backgroundColor = getRandomHexColor();
-  color.textContent = getRandomHexColor();
+  const colorClick = getRandomHexColor();
+  color.textContent = colorClick;
+  body.style.backgroundColor = colorClick;
 }

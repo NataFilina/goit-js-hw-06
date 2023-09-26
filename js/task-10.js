@@ -17,15 +17,15 @@ function getRandomHexColor() {
 let val; 
 
 function onGetValue(event) {
-
-  return val = event.currentTarget.value, btnCreate.addEventListener('click', createBoxes);;
+  return val = event.currentTarget.value;
 }
 
 let firstSize = 20;
 
-let arrBoxes = [];
+
 
 function createBoxes(amount) {
+  let arrBoxes = [];
   amount = val;
   for (let i = 0; i < amount; i += 1) {
     const div = document.createElement('div');
@@ -33,9 +33,10 @@ function createBoxes(amount) {
     div.style.height = div.style.width;
     div.style.backgroundColor = getRandomHexColor();
     arrBoxes.push(div);
-    boxesContainer.append(...arrBoxes);
   };
+  boxesContainer.append(...arrBoxes);
 };
+
 let size = 10;
 function boxBigger() {
   return firstSize += size;

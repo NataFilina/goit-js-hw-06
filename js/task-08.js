@@ -9,13 +9,12 @@ function onSubmit(event) {
     elements: { email, password }
     } = event.currentTarget;
     if (email.value === '' || password.value === '') {
-      alert("всі поля повинні бути заповнені")
-    } else {
-        return console.log({
+      return alert("всі поля повинні бути заповнені")
+    }
+    console.log({
             email: email.value,
             password: password.value
         }),
             form.reset();
-    }
 
 }
